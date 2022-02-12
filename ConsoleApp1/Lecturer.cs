@@ -18,5 +18,10 @@ namespace ConsoleApp1
             Department = department;
             UniversityName = universityName;
         }
+        public string GetPositionAndUniversityName(string postiton, string universityName)
+        {
+            string s = "Займає посаду " + postiton + " в університеті " + universityName;
+            return s;
+        }
     }
 }
