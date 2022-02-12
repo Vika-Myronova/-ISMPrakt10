@@ -17,6 +17,10 @@ namespace ConsoleApp1
             DateOfIssue = dateOfIssue;
             MonthlyReaderShipFee = monthlyReaderShipFee;
         }
+        public int GetNumberOfDaysAfterIssue()
+        {
+            TimeSpan days = DateTime.Now - DateOfIssue;
+            return (int)days.TotalDays / 365;
+        }
     }
-
 }
